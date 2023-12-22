@@ -1,99 +1,170 @@
-/*  police caractères importée
-    font-family: 'Manrope', sans-serif;
-    font-family: 'Montserrat', sans-serif;
-*/
+    /*  police caractères importée
+        font-family: 'Manrope', sans-serif;
+        font-family: 'Montserrat', sans-serif;
+    */
 
-* {
-    margin: 0;
-}
+    * {
+        margin: 0;
+    }
 
-body {
-    font-family: 'Manrope', sans-serif;
-    font-size: 1em;
-    background-color: #1f2039;
-}
-
-
-a {
-    text-decoration: none;
-    color: #242424;
-}
-
-    a:hover {
-        text-decoration: underline;
+    body {
+        font-family: 'Manrope', sans-serif;
+        font-size: 1em;
+        background-color: #1f2039;
     }
 
 
-em {
-    color: #a5b4fc;
-    font-style: normal;
-}
-
-
-h1 {
-    font-size: 3.5em;
-    color:#a5b4fc;
-    font-family: 'Montserrat', sans-serif;
-}
-
-
-h2 {
-    color: #f9f8ff;
-}
-
-p,
-li {
-    font-size: 1.1em;
-    color: #f9f8ff;
-}
-
-
-header,
-footer {
-    background-color: white;
-    padding: 20px 50px;
-}
-
-
-.cta {
-    background: linear-gradient(#8e86b5, #acaeed);
-    color: white;
-    border-radius: 50px;
-    padding: 20px 30px;
-}
-
-    .cta:hover {
+    a {
         text-decoration: none;
-        background: linear-gradient(#696484, #8788ba);
+        color: #242424;
+    }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+
+    em {
+        color: #a5b4fc;
+        font-style: normal;
     }
 
 
-.carre-contenu {
-    border-right: 1px solid #8e86b5;
-    border-bottom: 1px solid #8e86b5;
-    padding: 50px;
-}
+    h1 {
+        font-size: 3.5em;
+        color: #a5b4fc;
+        font-family: 'Montserrat', sans-serif;
+    }
 
 
-/* dans le cours ils ont utilisé "class=lien-icone" pour toutes les 
-    icônes ; ce qui est beaucoup plus long */
-a img:hover {
-    opacity: 0.5;
-}
+    h2 {
+        color: #f9f8ff;
+    }
 
-section {
-    padding: 80px;
-}
+    p,
+    li {
+        font-size: 1.1em;
+        color: #f9f8ff;
+    }
 
-.contenu-A-Propos {
-    margin: auto;
-    width: 50%;
-}
 
-.carre-contenu h2 {
-    margin-top: 30px;
-}
+    header,
+    footer {
+        background-color: white;
+        padding: 20px 50px;
+    }
 
-.carre-contenu ul {
-    margin-top: 30px;
-}
+
+    .cta {
+        background: linear-gradient(#8e86b5, #acaeed);
+        color: white;
+        border-radius: 50px;
+        padding: 20px 30px;
+        margin: 25px;
+        width: fit-content;
+    }
+
+        .cta:hover {
+            text-decoration: none;
+            background: linear-gradient(#696484, #8788ba);
+        }
+
+    /* dans le cours ils ont utilisé "class=lien-icone" pour 
+        toutes les icônes ; ce qui est beaucoup plus long 
+    */
+
+    a img:hover {
+        opacity: 0.5;
+    }
+
+    .carre-contenu {
+        border-right: 1px solid #8e86b5;
+        border-bottom: 1px solid #8e86b5;
+        padding: 50px;
+    }
+
+        .carre-contenu h2 {
+            margin-top: 30px;
+        }
+
+        .carre-contenu ul {
+            margin-top: 30px;
+        }
+
+    section {
+        padding: 80px;
+    }
+
+    .contenu-A-Propos {
+        margin: auto;
+        width: 50%;
+    }
+
+    footer,
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    a img {
+        margin-left: 30px;
+    }
+
+    .accueil-photos {
+        background-color: white;
+        padding: 80px;
+    }
+
+        .accueil-photos h2 {
+            color: #242424;
+            text-align: center;
+            margin-bottom: 80px;
+        }
+/*  il est intéressant de pouvoir séparer les blocs de la div
+    pour la mettre en forme avec gap
+*/     
+        .accueil-photos div {
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+            justify-content: center;
+            margin-bottom: 15px;
+            flex-wrap:wrap;
+        }
+
+    /* code du corrigé mais il ne permet pas d'être responsive + 
+        problème de chevauchement
+    */
+
+    .accueil-introduction {
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+        align-items: center;
+        margin: auto;
+    }
+
+
+    /*Mon code lui permet d'être responsive et empêche les
+     chevauchements 
+    */
+
+    /*.accueil-introduction {
+        display:flex;
+        justify-content:space-evenly;
+        flex-wrap:wrap;
+    }
+
+
+    .accueil-introduction div {
+        display:flex;
+        flex-direction:column;
+        justify-content:space-evenly;
+        align-items:center;
+        width:50%;
+    }
+    */
+
+    
