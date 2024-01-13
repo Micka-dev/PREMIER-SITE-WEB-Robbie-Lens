@@ -3,8 +3,13 @@
     border-bottom: 1px solid #8e86b5;
     padding: 50px;
     margin-bottom: 80px;
+    width: 50%;
+    margin:auto;
 }
 
+    h1, h2 {
+    text-align:center;
+    }
     .carre-contenu h2 {
         margin-top: 30px;
     }
@@ -13,6 +18,7 @@
         margin-top: 30px;
     }
 
+/* permet de centrer le cta "voir mon portfolio"*/
     .carre-contenu + div {
         text-align: center;
     }
@@ -20,5 +26,38 @@
 
 .a-prpopos-main {
     margin: auto;
-    width: 50%;
 }
+
+table {
+    color: white;
+    border-collapse: collapse;
+    text-align:center;
+/*    margin:auto;
+*/    
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #8e86b5;
+    padding: 15px;   
+    /*padding: 50px;*/
+}
+
+td {
+    padding:80px;
+}
+
+/*th {
+    padding:25px;
+    }
+*/
+
+/*J'ai utilisé la balise caption moi*/
+    h2, caption {
+        margin-bottom:80px;
+    }
+/*caption {
+    margin-bottom: 50px;
+    font-size:1.5em;
+    font-weight: bold;
+}*/

@@ -1,12 +1,11 @@
 .portfolio-section-photos {
     background-color: white;
-    padding : 80px 800px 80px 400px;
    
 }
 
     .portfolio-section-photos h2 {
             color: #242424;
-            margin: 80px;
+            margin-bottom: 80px;
     }
 
     .grid-paysages img,
@@ -22,13 +21,15 @@
 .grid-paysages {
     display: grid;
     grid-template: repeat(3, 300px)/ repeat(3, 1fr);
-    gap: 15px;
+/*    grid-template: repeat(3, 571px)/ repeat(3, 1fr);
+*/    gap: 15px;
 }
 
 .grid-portraits {
     display: grid;
     grid-template: repeat(2, 300px)/ repeat(3, 1fr);
-    grid-gap: 15px;
+/*    grid-template: repeat(2, 571px)/ repeat(3, 1fr);
+*/    grid-gap: 15px;
 }
 
 .photo {

@@ -43,6 +43,8 @@
 		padding-right: 80px;
 	}
 
+
+
 /*Mon code lui permet d'être responsive et empêche les
      chevauchements 
     */
@@ -62,3 +64,114 @@
         width:50%;
     }
     */
+
+
+.section-contact h2 {
+	color: #a5b4fc;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	width: 40%;
+	margin: auto;
+	color: white;
+}
+
+.form-nom-email {
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+	/*	width:100%;
+	*/
+}
+
+.form-column {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
+}
+
+/* Mon code fonctionne (j'ai laissé mes class ds le html + mais j'ai enlevé les <br>
+	après les label nom, email et message)
+	mais ce n'est pas ce qu'ils ont fait même leur résultat n'est
+	pas tout à fait ce qui est attendu : pb largeur textarea=> non finalement : pb classe 
+	!Pour le miens il ne faut pas que j'oublie que les balises s'empiles en colone
+	pour simplifier mon code!
+
+	.section-contact {
+	color:white;
+	display:flex;
+	flex-direction:column;
+	justify-content:space-evenly;
+	align-items:center;
+}
+
+.coordonnees {
+	display:flex;
+	justify-content: space-between;
+	gap:25px;
+	margin-bottom:25px;
+}
+
+.coordonnees input {
+	height:25px;
+
+}
+
+textarea {
+	height: 100px;
+	width: 100%;
+	margin-bottom: 25px;
+}
+.section-contact h2 {
+	margin-bottom:50px;
+}
+*/
+
+
+
+input,
+textarea {
+	padding: 15px;
+	border-radius: 3px;
+	border: none;
+}
+
+/*textarea{
+	width:100%;
+}
+*/
+label {
+	margin-bottom: 10px;
+}
+
+input[type='submit'] {
+	width: 200px;
+	margin: auto;
+	margin-top: 30px;
+}
+
+/* code que j'ai utilisé car cta ne fonctionnait pas! j'avais
+	mis la class=cta ds une div englobant input type="submit"
+	erreur de jugement
+
+	.envoie {
+text-align:center;
+}
+
+.envoie input {
+	background: linear-gradient(#8e86b5, #acaeed);
+	color: white;
+	border-radius: 50px;
+	border:none;
+	padding: 20px 30px;
+}
+
+	.envoie input:hover {
+		text-decoration: none;
+		background: linear-gradient(#696484, #8788ba);
+	}*/
