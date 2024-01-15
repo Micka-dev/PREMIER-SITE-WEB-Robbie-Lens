@@ -75,7 +75,7 @@
 form {
 	display: flex;
 	flex-direction: column;
-	width: 40%;
+	width: 60%; /*modification de 40% à 60% pour la responsivité*/
 	margin: auto;
 	color: white;
 }
@@ -175,3 +175,54 @@ text-align:center;
 		text-decoration: none;
 		background: linear-gradient(#696484, #8788ba);
 	}*/
+
+
+@media screen and (max-width: 996px) {
+	.accueil-introduction {
+		max-width: 1000px;
+		padding: 20px;
+		justify-content: center;
+		align-items: center;
+	}
+
+		.accueil-introduction div {
+			text-align: center;
+			padding-right: 0px;
+		}
+
+		.accueil-introduction img {
+			width: 100%;
+			margin-bottom: 20px;
+		}
+
+
+	form {
+		max-width: 1000px;
+	}
+
+	.accueil-photos,
+	section-contact {
+		padding: 20px;
+	}
+
+
+		.accueil-photos div,
+		.accueil-introduction,
+		.form-nom-email {
+			display: flex;
+			flex-direction: column;
+		}
+
+
+			.accueil-introduction img {
+				order: -1;
+			}
+
+	.form-nom-email {
+	gap:0;  /*Permet d'enlever un petit décalage*/
+	}
+
+	input[type='submit'] {
+		width: fit-content;
+	}
+}
